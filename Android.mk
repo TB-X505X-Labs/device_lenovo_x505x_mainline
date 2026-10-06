@@ -5,6 +5,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(USES_DEVICE_XIAOMI_MI89XX),true)
+ifeq ($(USES_DEVICE_LENOVO_X505X),true)
 
 endif

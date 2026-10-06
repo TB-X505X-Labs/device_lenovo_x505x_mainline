@@ -1,7 +1,0 @@
-# Touchscreen virtual keys
-vendor.ts_vkeys.focaltech.genvkeys.disp_maxx=720
-vendor.ts_vkeys.focaltech.genvkeys.disp_maxy=1280
-vendor.ts_vkeys.focaltech.genvkeys.panel_maxx=720
-vendor.ts_vkeys.focaltech.genvkeys.panel_maxy=2080
-vendor.ts_vkeys.focaltech.genvkeys.key_codes=139,172,158
-vendor.ts_vkeys.focaltech.genvkeys.y_beyond_maxy=true
