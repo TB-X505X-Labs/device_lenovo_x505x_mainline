@@ -1,2 +1,0 @@
-# Device
-ro.vendor.device.		u:object_r:vendor_device_prop:s0

@@ -1,0 +1,10 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "audio.x505x_mainline.xml",
+    src: "audio.x505x_mainline.xml",
+    vendor: true,
+}

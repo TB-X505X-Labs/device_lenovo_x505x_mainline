@@ -3,83 +3,74 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/mi89xx-mainline
+DEVICE_PATH := device/lenovo/x505x_mainline
+
+# Inherit options from mainline/qcom-common
+TARGET_QCOM_SOC := sdm429
+## TODO: Bringup the corresponding hardware and remove the following definitions
+TARGET_AUDIO_HAL := default-aidl
+TARGET_LIGHT_HAL := none
+TARGET_SUPPORTS_SUSPEND := false
+include device/mainline/qcom-common/optional/options.mk
 
 # Inherit from mainline/qcom-common
 $(call inherit-product, device/mainline/qcom-common/mainline_qcom-common.mk)
 
-# Bluetooth
-ifneq ($(PRODUCT_IS_ATV),true)
-ifneq ($(PRODUCT_IS_AUTOMOTIVE),true)
-# Set the Bluetooth Class of Device
-# Service Field: 0x5A -> 90
-#    Bit 17: Networking
-#    Bit 19: Capturing
-#    Bit 20: Object Transfer
-#    Bit 22: Telephony
-# MAJOR_CLASS: 0x02 -> 2 (Phone)
-# MINOR_CLASS: 0x0C -> 12 (Smart Phone)
-PRODUCT_ODM_PROPERTIES += \
-    bluetooth.device.class_of_device=90,2,12
-endif
-endif
+# AAPT
+PRODUCT_AAPT_PREF_CONFIG := mdpi
+
+# Audio
+PRODUCT_PACKAGES += \
+    audio.x505x_mainline.xml
 
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 800
+
+# Dalvik heap
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # HIDL
 PRODUCT_PACKAGES += \
-    vndservicemanager
+    android.hidl.memory.block@1.0.vendor
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mi89xx.rc \
-    init.recovery.mi89xx.rc \
-    ueventd.mi89xx.rc
+    init.x505x.rc \
+    init.recovery.x505x.rc \
+    ueventd.x505x.rc
 
 PRODUCT_PACKAGES += \
+    use_memfd.rc \
     zram.rc
+
+$(call soong_config_set,mainline_common_libinit,set_properties_from,devicetree)
 
 # Kernel
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
+PRODUCT_PACKAGES += \
+    modules.load.normal
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlays/overlay
 
-ifeq ($(PRODUCT_IS_ATV),true)
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlays/overlay-tv
-endif
+PRODUCT_PACKAGES += \
+    AodDefaultOnOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
-ifeq ($(PRODUCT_IS_ATV),true)
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.screen.landscape.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.screen.landscape.xml
-endif
-
-# Set device properties
-PRODUCT_PACKAGES += \
-    set_device_prop \
-    set_device_prop.recovery
-
 # Scoped Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
-# Sensors
-PRODUCT_PACKAGES += \
-    android.hardware.sensor.accelerometer.prebuilt.xml \
-    android.hardware.sensor.compass.prebuilt.xml \
-    android.hardware.sensor.gyroscope.prebuilt.xml \
-    android.hardware.sensor.light.prebuilt.xml \
-    android.hardware.sensor.proximity.prebuilt.xml
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+    $(DEVICE_PATH) \
+    kernel/mainline/configs
