@@ -6,3 +6,6 @@ vendor.hwc.drm.device=/dev/dri/card1
 
 # APEX
 apexd.config.dm_create.timeout=10000
+
+# Graphics
+vendor.minigbm.debug=nocompression
