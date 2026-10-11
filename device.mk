@@ -43,6 +43,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.x505x \
+    fstab.x505x.ramdisk \
     init.x505x.rc \
     ueventd.x505x.rc
 
