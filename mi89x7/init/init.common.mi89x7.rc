@@ -1,0 +1,79 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Power supply
+## BQ25601 + BQ27426 devices
+on property:ro.vendor.device.codename=riva
+    write /sys/class/power_supply/bq256xx-charger/charge_term_current 60000
+    write /sys/class/power_supply/bq256xx-charger/constant_charge_current 1000000
+    write /sys/class/power_supply/bq256xx-charger/input_current_limit 1000000
+    write /sys/class/power_supply/bq256xx-charger/precharge_current 256000
+on property:ro.vendor.device.codename=ugg
+    write /sys/class/power_supply/bq256xx-charger/charge_term_current 120000
+    write /sys/class/power_supply/bq256xx-charger/constant_charge_current 2000000
+    write /sys/class/power_supply/bq256xx-charger/input_current_limit 2000000
+    write /sys/class/power_supply/bq256xx-charger/precharge_current 120000
+on property:ro.vendor.device.codename=ugglite
+    write /sys/class/power_supply/bq256xx-charger/charge_term_current 120000
+    write /sys/class/power_supply/bq256xx-charger/constant_charge_current 2000000
+    write /sys/class/power_supply/bq256xx-charger/input_current_limit 2000000
+    write /sys/class/power_supply/bq256xx-charger/precharge_current 120000
+## QCOM SMBCHG devices
+on property:ro.vendor.device.codename=land
+    write /sys/class/power_supply/qcom-smbchg-usb/constant_charge_current 2000000
+    write /sys/class/power_supply/qcom-smbchg-usb/input_current_limit 2000000
+on property:ro.vendor.device.codename=prada
+    write /sys/class/power_supply/qcom-smbchg-usb/constant_charge_current 2000000
+    write /sys/class/power_supply/qcom-smbchg-usb/input_current_limit 2000000
+on property:ro.vendor.device.codename=santoni
+    write /sys/class/power_supply/qcom-smbchg-usb/constant_charge_current 2000000
+    write /sys/class/power_supply/qcom-smbchg-usb/input_current_limit 2000000
+## SMB358 + CW2015 device (TODO)
+
+# Touchscreen virtual keys
+on property:ro.vendor.device.codename=land
+    setprop vendor.ts_vkeys.focaltech.genvkeys.disp_maxx 720
+    setprop vendor.ts_vkeys.focaltech.genvkeys.disp_maxy 1280
+    setprop vendor.ts_vkeys.focaltech.genvkeys.panel_maxx 720
+    setprop vendor.ts_vkeys.focaltech.genvkeys.panel_maxy 1458
+    setprop vendor.ts_vkeys.focaltech.genvkeys.key_codes 139,172,158
+    setprop vendor.ts_vkeys.focaltech.genvkeys.y_beyond_maxy true
+    setprop vendor.ts_vkeys.Imagis_capacitive_touchscreen.genvkeys.disp_maxx 1080
+    setprop vendor.ts_vkeys.Imagis_capacitive_touchscreen.genvkeys.disp_maxy 1920
+    setprop vendor.ts_vkeys.Imagis_capacitive_touchscreen.genvkeys.panel_maxx 1080
+    setprop vendor.ts_vkeys.Imagis_capacitive_touchscreen.genvkeys.panel_maxy 2098
+    setprop vendor.ts_vkeys.Imagis_capacitive_touchscreen.genvkeys.key_codes 139,172,158
+    start ts_vkeys
+    start vendor.ts_vkeys
+
+on property:ro.vendor.device.codename=riva
+    setprop vendor.ts_vkeys.focaltech.genvkeys.disp_maxx 720
+    setprop vendor.ts_vkeys.focaltech.genvkeys.disp_maxy 1280
+    setprop vendor.ts_vkeys.focaltech.genvkeys.panel_maxx 720
+    setprop vendor.ts_vkeys.focaltech.genvkeys.panel_maxy 2080
+    setprop vendor.ts_vkeys.focaltech.genvkeys.key_codes 139,172,158
+    setprop vendor.ts_vkeys.focaltech.genvkeys.y_beyond_maxy true
+    start ts_vkeys
+    start vendor.ts_vkeys
+
+on property:ro.vendor.device.codename=rolex
+    setprop vendor.ts_vkeys.focaltech.genvkeys.disp_maxx 720
+    setprop vendor.ts_vkeys.focaltech.genvkeys.disp_maxy 1280
+    setprop vendor.ts_vkeys.focaltech.genvkeys.panel_maxx 720
+    setprop vendor.ts_vkeys.focaltech.genvkeys.panel_maxy 2080
+    setprop vendor.ts_vkeys.focaltech.genvkeys.key_codes 139,172,158
+    setprop vendor.ts_vkeys.focaltech.genvkeys.y_beyond_maxy true
+    start ts_vkeys
+    start vendor.ts_vkeys
+
+on property:ro.vendor.device.codename=santoni
+    setprop vendor.ts_vkeys.focaltech.genvkeys.disp_maxx 720
+    setprop vendor.ts_vkeys.focaltech.genvkeys.disp_maxy 1280
+    setprop vendor.ts_vkeys.focaltech.genvkeys.panel_maxx 720
+    setprop vendor.ts_vkeys.focaltech.genvkeys.panel_maxy 1458
+    setprop vendor.ts_vkeys.focaltech.genvkeys.key_codes 139,172,158
+    setprop vendor.ts_vkeys.focaltech.genvkeys.y_beyond_maxy true
+    start ts_vkeys
+    start vendor.ts_vkeys
