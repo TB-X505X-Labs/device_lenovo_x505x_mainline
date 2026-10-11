@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+BUILD_BROKEN_DUP_RULES := true
+
 USES_DEVICE_LENOVO_X505X := true
 
 # Inherit from mainline/qcom-common
