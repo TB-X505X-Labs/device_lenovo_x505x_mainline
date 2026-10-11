@@ -29,7 +29,8 @@ BOARD_KERNEL_CMDLINE := \
     $(MAINLINE_QCOM_SOC_KERNEL_PARAMS) \
     androidboot.hardware=x505x \
     androidboot.verifiedbootstate=orange \
-    console=tty0
+    console=tty0 \
+    drm_kms_helper.fbdev_emulation=0
 
 ifneq ($(TARGET_LK2ND_PLATFORM),)
 BOARD_KERNEL_CMDLINE += \
