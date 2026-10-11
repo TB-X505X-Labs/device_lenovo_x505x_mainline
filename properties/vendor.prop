@@ -3,3 +3,6 @@ persist.sys.zram_enabled=1
 
 # Display
 vendor.hwc.drm.device=/dev/dri/card1
+
+# APEX
+apexd.config.dm_create.timeout=10000
