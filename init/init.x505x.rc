@@ -17,3 +17,4 @@ on late-fs
 # Kernel module loading
 on post-fs
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -s -d /vendor/lib/modules --all=/vendor/etc/modules.load.normal
+    trigger start_all_remoteproc
