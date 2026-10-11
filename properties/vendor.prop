@@ -1,2 +1,5 @@
 # ZRAM
 persist.sys.zram_enabled=1
+
+# Display
+vendor.hwc.drm.device=/dev/dri/card1
