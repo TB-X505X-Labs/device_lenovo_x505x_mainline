@@ -12,8 +12,19 @@ $(call inherit-product, device/mainline/qcom-common/mainline_qcom-common.mk)
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 # Audio
-## TODO: Bringup the audio hardware and switch to the mainline audio HAL
-TARGET_AUDIO_HAL := default-aidl
+TARGET_AUDIO_HAL := mainline
+TARGET_AUDIO_MAINLINE_UCM_PROFILES := base
+
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.audio.mainline.cards=tbx505x-audio \
+    vendor.audio.mainline.primary_card=tbx505x-audio \
+    vendor.audio.mainline.card.tbx505x-audio.rates=48000 \
+    vendor.audio.mainline.card.tbx505x-audio.bits=16
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/ucm2/conf.d/tbx505x-audio/tbx505x-audio.conf:$(TARGET_COPY_OUT_VENDOR)/etc/alsa/ucm2/conf.d/tbx505x-audio/tbx505x-audio.conf \
+    $(DEVICE_PATH)/ucm2/conf.d/tbx505xaudio/tbx505xaudio.conf:$(TARGET_COPY_OUT_VENDOR)/etc/alsa/ucm2/conf.d/tbx505xaudio/tbx505xaudio.conf \
+    $(DEVICE_PATH)/ucm2/Lenovo/tbx505x/HiFi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/alsa/ucm2/Lenovo/tbx505x/HiFi.conf
 
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
