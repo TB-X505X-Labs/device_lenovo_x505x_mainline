@@ -4,7 +4,7 @@
 
 |               Path               |                    URL                    |         Branch         |
 |----------------------------------|-------------------------------------------|------------------------|
-| kernel/mainline/msm89x7-mainline | https://github.com/msm89x7-mainline/linux | msm89x7/7.1.3          |
+| kernel/mainline/msm89x7-mainline | https://github.com/TB-X505X-Labs/linux    | msm89x7/7.1.3          |
 
 ## Kernel edits
 
