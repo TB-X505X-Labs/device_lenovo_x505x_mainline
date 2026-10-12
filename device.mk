@@ -40,8 +40,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.camera.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.camera.xml \
-    frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.camera.front.xml
+    frameworks/native/data/etc/android.hardware.camera.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.camera.xml
 
 # Disable
 ## TODO: Bringup the corresponding hardware and remove the following definitions
