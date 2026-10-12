@@ -70,6 +70,19 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 PRODUCT_PACKAGES += \
     modules.load.normal
 
+# Modem
+PRODUCT_PACKAGES += \
+    pd-mapper \
+    pd-mapper.rc \
+    qrtr-cfg \
+    rmtfs \
+    rmtfs.rc \
+    tqftpserv \
+    tqftpserv.rc
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.qcom.soc.enable_modem_services=1
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlays/overlay
