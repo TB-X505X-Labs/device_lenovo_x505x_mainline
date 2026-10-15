@@ -10,5 +10,11 @@
   { 
     "repository": "android_kernel_mainline_configs",
     "target_path": "kernel/mainline/configs"
+  },
+  {
+    "remote": "github",
+    "repository": "TB-X505X-Labs/qrild",
+    "target_path": "external/qrild",
+    "branch": "v5"
   }
 ]

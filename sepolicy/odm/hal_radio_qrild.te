@@ -1,0 +1,7 @@
+type hal_radio_qrild, domain;
+type hal_radio_qrild_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hal_radio_qrild)
+hal_server_domain(hal_radio_qrild, hal_radio)
+
+allow hal_radio_qrild self:qipcrtr_socket create_socket_perms_no_ioctl;

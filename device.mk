@@ -83,6 +83,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.qcom.soc.enable_modem_services=1
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio-service.qrild
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/permissions/android.hardware.telephony.x505x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.x505x.xml
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlays/overlay
@@ -111,6 +118,7 @@ TARGET_QCOM_SOC := sdm429
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
+    external/qrild \
     kernel/mainline/configs
 
 # VINTF
