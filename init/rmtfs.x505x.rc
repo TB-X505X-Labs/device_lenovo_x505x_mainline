@@ -1,0 +1,6 @@
+service vendor.rmtfs /vendor/bin/rmtfs -o /dev/block/by-name -P -s
+    class core
+    user root
+    group system
+    stdio_to_kmsg
+    disabled

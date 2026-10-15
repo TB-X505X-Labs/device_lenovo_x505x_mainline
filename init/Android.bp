@@ -15,3 +15,10 @@ prebuilt_etc {
     src: "ueventd.x505x.rc",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "rmtfs.x505x.rc",
+    src: "rmtfs.x505x.rc",
+    sub_dir: "init",
+    vendor: true,
+}

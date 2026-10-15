@@ -76,7 +76,7 @@ PRODUCT_PACKAGES += \
     pd-mapper.rc \
     qrtr-cfg \
     rmtfs \
-    rmtfs.rc \
+    rmtfs.x505x.rc \
     tqftpserv \
     tqftpserv.rc
 
