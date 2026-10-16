@@ -63,6 +63,11 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,mainline_common_libinit,set_properties_from,devicetree)
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/keylayout/Goodix_Capacitive_TouchScreen.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Goodix_Capacitive_TouchScreen.kl \
+    $(DEVICE_PATH)/keylayout/goodix-ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix-ts.kl
+
 # Kernel
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
