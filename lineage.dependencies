@@ -13,8 +13,8 @@
   },
   {
     "remote": "github",
-    "repository": "TB-X505X-Labs/qrild",
+    "repository": "TB-X505X-Labs/android_external_qrild",
     "target_path": "external/qrild",
-    "branch": "v5"
+    "branch": "lineage-24.0"
   }
 ]
