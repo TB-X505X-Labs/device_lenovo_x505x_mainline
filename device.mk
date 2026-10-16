@@ -44,7 +44,6 @@ PRODUCT_COPY_FILES += \
 
 # Disable
 ## TODO: Bringup the corresponding hardware and remove the following definitions
-TARGET_LIGHT_HAL := none
 TARGET_SUPPORTS_SUSPEND := false
 
 # HIDL
