@@ -1,1 +1,2 @@
 attribute hal_radio_server;
+attribute hal_radio;
