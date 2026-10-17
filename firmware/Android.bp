@@ -1,0 +1,442 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+install_symlink {
+    name: "symlink_firmware_x505x_mba.mbn",
+    vendor: true,
+    installed_location: "firmware/mba.mbn",
+    symlink_target: "/vendor/firmware_mnt/image/mba.mbn",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.mdt",
+    vendor: true,
+    installed_location: "firmware/modem.mdt",
+    symlink_target: "/vendor/firmware_mnt/image/modem.mdt",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b00",
+    vendor: true,
+    installed_location: "firmware/modem.b00",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b00",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b01",
+    vendor: true,
+    installed_location: "firmware/modem.b01",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b01",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b03",
+    vendor: true,
+    installed_location: "firmware/modem.b03",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b03",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b05",
+    vendor: true,
+    installed_location: "firmware/modem.b05",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b05",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b06",
+    vendor: true,
+    installed_location: "firmware/modem.b06",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b06",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b07",
+    vendor: true,
+    installed_location: "firmware/modem.b07",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b07",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b08",
+    vendor: true,
+    installed_location: "firmware/modem.b08",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b08",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b09",
+    vendor: true,
+    installed_location: "firmware/modem.b09",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b09",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b10",
+    vendor: true,
+    installed_location: "firmware/modem.b10",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b10",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b11",
+    vendor: true,
+    installed_location: "firmware/modem.b11",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b11",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b12",
+    vendor: true,
+    installed_location: "firmware/modem.b12",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b12",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b13",
+    vendor: true,
+    installed_location: "firmware/modem.b13",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b13",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b14",
+    vendor: true,
+    installed_location: "firmware/modem.b14",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b14",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b15",
+    vendor: true,
+    installed_location: "firmware/modem.b15",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b15",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b19",
+    vendor: true,
+    installed_location: "firmware/modem.b19",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b19",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b20",
+    vendor: true,
+    installed_location: "firmware/modem.b20",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b20",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b21",
+    vendor: true,
+    installed_location: "firmware/modem.b21",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b21",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b22",
+    vendor: true,
+    installed_location: "firmware/modem.b22",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b22",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b23",
+    vendor: true,
+    installed_location: "firmware/modem.b23",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b23",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_modem.b24",
+    vendor: true,
+    installed_location: "firmware/modem.b24",
+    symlink_target: "/vendor/firmware_mnt/image/modem.b24",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.mdt",
+    vendor: true,
+    installed_location: "firmware/adsp.mdt",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.mdt",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b00",
+    vendor: true,
+    installed_location: "firmware/adsp.b00",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b00",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b01",
+    vendor: true,
+    installed_location: "firmware/adsp.b01",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b01",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b02",
+    vendor: true,
+    installed_location: "firmware/adsp.b02",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b02",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b03",
+    vendor: true,
+    installed_location: "firmware/adsp.b03",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b03",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b04",
+    vendor: true,
+    installed_location: "firmware/adsp.b04",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b04",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b05",
+    vendor: true,
+    installed_location: "firmware/adsp.b05",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b05",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b06",
+    vendor: true,
+    installed_location: "firmware/adsp.b06",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b06",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b07",
+    vendor: true,
+    installed_location: "firmware/adsp.b07",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b07",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b08",
+    vendor: true,
+    installed_location: "firmware/adsp.b08",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b08",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b09",
+    vendor: true,
+    installed_location: "firmware/adsp.b09",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b09",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b10",
+    vendor: true,
+    installed_location: "firmware/adsp.b10",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b10",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b11",
+    vendor: true,
+    installed_location: "firmware/adsp.b11",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b11",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b12",
+    vendor: true,
+    installed_location: "firmware/adsp.b12",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b12",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b13",
+    vendor: true,
+    installed_location: "firmware/adsp.b13",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b13",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_adsp.b14",
+    vendor: true,
+    installed_location: "firmware/adsp.b14",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.b14",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_wcnss.mdt",
+    vendor: true,
+    installed_location: "firmware/wcnss.mdt",
+    symlink_target: "/vendor/firmware_mnt/image/wcnss.mdt",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_wcnss.b00",
+    vendor: true,
+    installed_location: "firmware/wcnss.b00",
+    symlink_target: "/vendor/firmware_mnt/image/wcnss.b00",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_wcnss.b01",
+    vendor: true,
+    installed_location: "firmware/wcnss.b01",
+    symlink_target: "/vendor/firmware_mnt/image/wcnss.b01",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_wcnss.b02",
+    vendor: true,
+    installed_location: "firmware/wcnss.b02",
+    symlink_target: "/vendor/firmware_mnt/image/wcnss.b02",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_wcnss.b04",
+    vendor: true,
+    installed_location: "firmware/wcnss.b04",
+    symlink_target: "/vendor/firmware_mnt/image/wcnss.b04",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_wcnss.b06",
+    vendor: true,
+    installed_location: "firmware/wcnss.b06",
+    symlink_target: "/vendor/firmware_mnt/image/wcnss.b06",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_wcnss.b09",
+    vendor: true,
+    installed_location: "firmware/wcnss.b09",
+    symlink_target: "/vendor/firmware_mnt/image/wcnss.b09",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_wcnss.b10",
+    vendor: true,
+    installed_location: "firmware/wcnss.b10",
+    symlink_target: "/vendor/firmware_mnt/image/wcnss.b10",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_wcnss.b11",
+    vendor: true,
+    installed_location: "firmware/wcnss.b11",
+    symlink_target: "/vendor/firmware_mnt/image/wcnss.b11",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_wcnss.b12",
+    vendor: true,
+    installed_location: "firmware/wcnss.b12",
+    symlink_target: "/vendor/firmware_mnt/image/wcnss.b12",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_venus.mdt",
+    vendor: true,
+    installed_location: "firmware/venus.mdt",
+    symlink_target: "/vendor/firmware_mnt/image/venus.mdt",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_venus.b00",
+    vendor: true,
+    installed_location: "firmware/venus.b00",
+    symlink_target: "/vendor/firmware_mnt/image/venus.b00",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_venus.b01",
+    vendor: true,
+    installed_location: "firmware/venus.b01",
+    symlink_target: "/vendor/firmware_mnt/image/venus.b01",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_venus.b02",
+    vendor: true,
+    installed_location: "firmware/venus.b02",
+    symlink_target: "/vendor/firmware_mnt/image/venus.b02",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_venus.b03",
+    vendor: true,
+    installed_location: "firmware/venus.b03",
+    symlink_target: "/vendor/firmware_mnt/image/venus.b03",
+}
+
+install_symlink {
+    name: "symlink_firmware_x505x_venus.b04",
+    vendor: true,
+    installed_location: "firmware/venus.b04",
+    symlink_target: "/vendor/firmware_mnt/image/venus.b04",
+}
+
+phony {
+    name: "all_symlink_firmware_x505x",
+    required: [
+        "symlink_firmware_x505x_mba.mbn",
+        "symlink_firmware_x505x_modem.mdt",
+        "symlink_firmware_x505x_modem.b00",
+        "symlink_firmware_x505x_modem.b01",
+        "symlink_firmware_x505x_modem.b03",
+        "symlink_firmware_x505x_modem.b05",
+        "symlink_firmware_x505x_modem.b06",
+        "symlink_firmware_x505x_modem.b07",
+        "symlink_firmware_x505x_modem.b08",
+        "symlink_firmware_x505x_modem.b09",
+        "symlink_firmware_x505x_modem.b10",
+        "symlink_firmware_x505x_modem.b11",
+        "symlink_firmware_x505x_modem.b12",
+        "symlink_firmware_x505x_modem.b13",
+        "symlink_firmware_x505x_modem.b14",
+        "symlink_firmware_x505x_modem.b15",
+        "symlink_firmware_x505x_modem.b19",
+        "symlink_firmware_x505x_modem.b20",
+        "symlink_firmware_x505x_modem.b21",
+        "symlink_firmware_x505x_modem.b22",
+        "symlink_firmware_x505x_modem.b23",
+        "symlink_firmware_x505x_modem.b24",
+        "symlink_firmware_x505x_adsp.mdt",
+        "symlink_firmware_x505x_adsp.b00",
+        "symlink_firmware_x505x_adsp.b01",
+        "symlink_firmware_x505x_adsp.b02",
+        "symlink_firmware_x505x_adsp.b03",
+        "symlink_firmware_x505x_adsp.b04",
+        "symlink_firmware_x505x_adsp.b05",
+        "symlink_firmware_x505x_adsp.b06",
+        "symlink_firmware_x505x_adsp.b07",
+        "symlink_firmware_x505x_adsp.b08",
+        "symlink_firmware_x505x_adsp.b09",
+        "symlink_firmware_x505x_adsp.b10",
+        "symlink_firmware_x505x_adsp.b11",
+        "symlink_firmware_x505x_adsp.b12",
+        "symlink_firmware_x505x_adsp.b13",
+        "symlink_firmware_x505x_adsp.b14",
+        "symlink_firmware_x505x_wcnss.mdt",
+        "symlink_firmware_x505x_wcnss.b00",
+        "symlink_firmware_x505x_wcnss.b01",
+        "symlink_firmware_x505x_wcnss.b02",
+        "symlink_firmware_x505x_wcnss.b04",
+        "symlink_firmware_x505x_wcnss.b06",
+        "symlink_firmware_x505x_wcnss.b09",
+        "symlink_firmware_x505x_wcnss.b10",
+        "symlink_firmware_x505x_wcnss.b11",
+        "symlink_firmware_x505x_wcnss.b12",
+        "symlink_firmware_x505x_venus.mdt",
+        "symlink_firmware_x505x_venus.b00",
+        "symlink_firmware_x505x_venus.b01",
+        "symlink_firmware_x505x_venus.b02",
+        "symlink_firmware_x505x_venus.b03",
+        "symlink_firmware_x505x_venus.b04",
+    ],
+}

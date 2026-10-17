@@ -74,6 +74,10 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 PRODUCT_PACKAGES += \
     modules.load.normal
 
+# Firmware
+PRODUCT_PACKAGES += \
+    all_symlink_firmware_x505x
+
 # Modem
 PRODUCT_PACKAGES += \
     pd-mapper \
