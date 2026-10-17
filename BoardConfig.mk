@@ -38,9 +38,7 @@ BOARD_KERNEL_CMDLINE += \
 endif
 
 # TODO: Remove when permissive is no longer needed
-BOARD_KERNEL_CMDLINE += \
-    androidboot.selinux=permissive \
-    audit=0
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Display
 TARGET_SCREEN_DENSITY := 160
