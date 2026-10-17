@@ -5,3 +5,9 @@
 
 soong_namespace {
 }
+
+prebuilt_etc {
+    name: "powerhint.json",
+    src: "configs/perf/powerhint.json",
+    vendor: true,
+}

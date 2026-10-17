@@ -1,0 +1,77 @@
+{
+    "Nodes": [
+        {
+            "Name": "sysDevicesSystemCpuCpufreqPolicy0ScalingMinFreq",
+            "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
+            "Values": [
+                "1804800",
+                "1305600",
+                "960000"
+            ],
+            "DefaultIndex": 2,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "sysClassDevfreq1c00000GpuMinFreq",
+            "Path": "/sys/class/devfreq/1c00000.gpu/min_freq",
+            "Values": [
+                "300000000",
+                "19200000"
+            ],
+            "DefaultIndex": 1,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "devCpuctlTopAppCpuUclampMin",
+            "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+            "Values": [
+                "30",
+                "0"
+            ],
+            "DefaultIndex": 1,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "sysGoodixGestureGestureEnable",
+            "Path": "/sys/goodix_gesture/gesture_enable",
+            "Values": [
+                "1",
+                "0"
+            ],
+            "DefaultIndex": 1,
+            "ResetOnInit": true
+        }
+    ],
+    "Actions": [
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "sysDevicesSystemCpuCpufreqPolicy0ScalingMinFreq",
+            "Value": "1305600",
+            "Duration": 0
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "sysDevicesSystemCpuCpufreqPolicy0ScalingMinFreq",
+            "Value": "1804800",
+            "Duration": 3000
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "sysClassDevfreq1c00000GpuMinFreq",
+            "Value": "300000000",
+            "Duration": 3000
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "devCpuctlTopAppCpuUclampMin",
+            "Value": "30",
+            "Duration": 3000
+        },
+        {
+            "PowerHint": "DOUBLE_TAP_TO_WAKE",
+            "Node": "sysGoodixGestureGestureEnable",
+            "Value": "1",
+            "Duration": 0
+        }
+    ]
+}
