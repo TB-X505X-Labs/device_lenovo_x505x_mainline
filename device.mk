@@ -80,8 +80,6 @@ PRODUCT_PACKAGES += \
 
 # Modem
 PRODUCT_PACKAGES += \
-    pd-mapper \
-    pd-mapper.rc \
     qrtr-cfg \
     rmtfs \
     rmtfs.x505x.rc \
