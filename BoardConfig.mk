@@ -45,9 +45,6 @@ BOARD_KERNEL_CMDLINE += \
 # Display
 TARGET_SCREEN_DENSITY := 160
 
-# Double tap to wake
-TARGET_TAP_TO_WAKE_NODE := "/sys/goodix_gesture/gesture_enable"
-
 # Filesystem
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
