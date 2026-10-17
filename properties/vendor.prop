@@ -11,4 +11,5 @@ apexd.config.dm_create.timeout=10000
 vendor.minigbm.debug=nocompression
 
 # Sensors
+vendor.sensors.backends=iio
 vendor.sensors.iio.qcom_smgr_accel.mount_matrix=0, 1, 0; 1, 0, 0; 0, 0, -1
